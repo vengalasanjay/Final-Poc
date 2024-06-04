@@ -869,23 +869,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Manjunath Nayak\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/azureuser/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manjunath Nayak\\Desktop\\MongoDBDotNET6Angular13\\MongoDBDotNET6\\MongoDBDotNET6\\MongoDBDotNET6.csproj",
+      "projectUniqueName": "/home/azureuser/Final-Poc/Backend/MongoDBDotNET6.csproj",
       "projectName": "MongoDBDotNET6",
-      "projectPath": "C:\\Users\\Manjunath Nayak\\Desktop\\MongoDBDotNET6Angular13\\MongoDBDotNET6\\MongoDBDotNET6\\MongoDBDotNET6.csproj",
-      "packagesPath": "C:\\Users\\Manjunath Nayak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manjunath Nayak\\Desktop\\MongoDBDotNET6Angular13\\MongoDBDotNET6\\MongoDBDotNET6\\obj\\",
+      "projectPath": "/home/azureuser/Final-Poc/Backend/MongoDBDotNET6.csproj",
+      "packagesPath": "/home/azureuser/.nuget/packages/",
+      "outputPath": "/home/azureuser/Final-Poc/Backend/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Manjunath Nayak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/azureuser/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -932,19 +928,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.30, 6.0.30]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.15, 6.0.15]"
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[6.0.30, 6.0.30]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.15, 6.0.15]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.30, 6.0.30]"
           }
         ],
         "frameworkReferences": {
@@ -955,8 +947,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.3.23178.7\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MongoDB.Driver' 2.15.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-7j9m-j397-g4wx",
+      "libraryId": "MongoDB.Driver",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

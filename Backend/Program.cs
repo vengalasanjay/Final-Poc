@@ -12,18 +12,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var MyAllowedOrigins = "_myAllowedOrigins";
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(MyAllowedOrigins,
-                          builder =>
-                          {
-                              builder.WithOrigins("http://localhost:4200")
-                                                  .AllowAnyHeader()
-                                                  .AllowAnyMethod();
-                          });
-});
-
+ builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+    {
+        builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+    }));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -37,6 +29,5 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseCors(MyAllowedOrigins);
-
+ app.UseCors("corsapp");
 app.Run();
